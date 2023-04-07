@@ -1,0 +1,73 @@
+---
+
+import Layout from "../layouts/Layout.astro"
+import logo2 from "../images/logo2.png"
+import usa from "../images/usa.png"
+import uk from "../images/uk.jpg"
+import nether from "../images/netherland.png"
+import india from "../images/india.png"
+
+---
+
+<Layout title="Contact Us | Trillium">
+    <div class="h-[40vh] md:h-[60vh] bg-[url('/src/images/contact.jpg')] bg-[#0003] bg-blend-darken bg-cover bg-center">
+    </div>
+    <div class="flex justify-center items-center py-5 md:py-8">
+        <img class="w-24 md:w-36" src={logo2} alt="">
+        <h2 class="text-[1.3rem] md:text-4xl font-bold pr-4 md:pr-0">Our Offices</h2>
+    </div>
+    <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 px-6 gap-10 sm:gap-6 py-12 md:py-16">
+        <div class="flex flex-col justify-center items-center gap-2 border-[1px] border-[#0001] shadow-lg">
+            <img src={usa} alt="">
+            <h4 class="text-[1.32rem] md:text-2xl font-semibold py-8 md:py-12 text-center">USA</h4>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2 border-[1px] border-[#0001] shadow-lg">
+            <img src={uk} alt="">
+            <h4 class="text-[1.32rem] md:text-2xl font-semibold py-8 md:py-12 text-center">UK</h4>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2 border-[1px] border-[#0001] shadow-lg">
+            <img src={nether} alt="">
+            <h4 class="text-[1.32rem] md:text-2xl font-semibold py-8 md:py-12 text-center">NETHERLANDS</h4>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2 border-[1px] border-[#0001] shadow-lg">
+            <img src={india} alt="">
+            <h4 class="text-[1.32rem] md:text-2xl font-semibold py-8 md:py-12 text-center">INDIA</h4>
+        </div>
+    </div>
+
+    <div class="bg-[url('/src/images/texture2.jpg')] sm:gap-6 pt-24 py-12 md:py-16 md:pt-36">
+        <div class="max-w-[1200px] mx-auto grid gap-16 lg:grid-cols-3 px-6 sm:px-20 lg:px-6 lg:gap-8">
+            <div class="relative flex flex-col justify-between items-center text-white gap-8 bg-[#51a4c5] py-12 pt-20">
+                <p class="text-xl font-bold">General</p>
+                <p class="text-lg">Ask Anything</p>
+                <p class="text-xl font-bold">info@trilliumglobalsoft.com</p>
+                <div class="mail w-20 h-20 flex justify-center items-center rounded-full absolute bg-[#000] top-0 right-1/2 translate-x-1/2 -translate-y-1/2">
+                    <svg class="w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#f2f2f2"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                </div>
+            </div>
+            <div class="relative flex flex-col justify-between items-center text-white gap-8 bg-[#4b94e1] py-12 pt-20">
+                <p class="text-xl font-bold">Sales</p>
+                <p class="text-lg">Business Development</p>
+                <p class="text-xl font-bold">sales@trilliumglobalsoft.com</p>
+                <div class="mail w-20 h-20 flex justify-center items-center rounded-full absolute bg-[#000] top-0 right-1/2 translate-x-1/2 -translate-y-1/2">
+                    <svg class="w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#f2f2f2"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                </div>
+            </div>
+            <div class="relative flex flex-col justify-between items-center text-white gap-8 bg-[#15334e] py-12 pt-20">
+                <p class="text-xl font-bold">Careers</p>
+                <p class="text-lg">Recruiting</p>
+                <p class="text-xl font-bold">careers@trilliumglobalsoft.com</p>
+                <div class="mail w-20 h-20 flex justify-center items-center rounded-full absolute bg-[#000] top-0 right-1/2 translate-x-1/2 -translate-y-1/2">
+                    <svg class="w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#f2f2f2"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</Layout>
+
+<style>
+    .mail {
+        background: -webkit-linear-gradient(top,#55bce7 0%,#736fb3 100%);
+    }
+</style>

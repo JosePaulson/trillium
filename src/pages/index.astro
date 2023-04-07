@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro"
+import logo2 from "../images/logo2.png"
+
+---
+
+<Layout title="Home | Trillium">
+	<div class="bg-[#0003] bg-blend-darken items-end bg-[url('/src/images/home.jpg')] h-[36vh] md:h-[56vh] bg-cover bg-no-repeat">
+	</div>
+	<div class="">
+		<div class="flex justify-center items-center py-5 md:py-8">
+			<img class="w-24 md:w-36" src={logo2} alt="">
+			<h2 class="text-2xl md:text-4xl font-bold pr-4 md:pr-0">ABOUT TRILLIUM</h2>
+		</div>
+		<p class="text-lg md:text-xl text-[#666] px-[8vw] md:px-[12vw] text-justify mb-16">Trillium is a Global Technology and Engineering Solutions Company with Footprints across America, UK, Europe, and India. Since our inception in 2004, We offer Next Gen Enterprise Solutions across Artificial Intelligence, Blockchain, Cloud, Mobility, Product Engineering and Software Development to Industry Verticals such as BFSI, Telecom, Government / PSU, Manufacturing, Healthcare and many more. Trillium offers comprehensive, end-to-end Software Solutions that address the emerging needs to drive innovation and transform business in highly competitive Global Markets.</p>
+	</div>
+	<div class="bg-[url('/src/images/texture2.jpg')]">
+		<div class="px-4 py-6 md:px-12 md:py-16 grid lg:grid-cols-2 max-w-[1200px] mx-auto gap-[6vw]">
+			<div class="order-1 h-96 lg:h-auto bg-[url('/src/images/mission.jpg')] bg-contain bg-no-repeat bg-center shadow-lg border-[1px] border-[#0001] rounded-lg">
+			</div>
+			<div class="order-2 bg-[#f9f9f9] px-5 py-12 md:px-12 md:py-16 flex flex-col justify-center space-y-2 shadow-lg rounded-lg">
+				<h3 class="font-thin text-2xl text-[#222a]">Our Mission</h3>
+				<h5 class="text-2xl md:text-3xl font-semibold">Draw your growth path with us!</h5>
+				<p class="text-lg text-[#666]">Draw your growth path with us! We provide valuable insight into the fastest-growing business with the best technological solution and fault-tolerant architecture. We have a unique customer-centric approach. We are here with the sole mission of turning any data into a readable form and influence critical decisions.</p>
+			</div>
+			<div class="order-3 lg:order-4 h-96 lg:h-auto bg-[url('/src/images/vission.jpg')] bg-contain bg-no-repeat bg-center shadow-lg border-[1px] border-[#0001] rounded-lg">
+			</div>
+			<div class="order-4 lg:order-3 bg-[#f9f9f9] px-5 py-12 md:px-12 md:py-16 flex flex-col justify-center space-y-2 shadow-lg rounded-lg">
+				<h3 class="font-thin text-2xl text-[#222a]">Our Vision</h3>
+				<h5 class="text-2xl md:text-3xl font-semibold">Right decisions on Right time with Right people!</h5>
+				<p class="text-lg text-[#666]">Right decisions on the Right time with Right people!Trillium is born to provide all the answers for your data-driven problems. It consults and provides promising insights for making the best out of it in your growing business. Trillium is one of the leading companies which envisions itself as one of the best Big Data solution providers in the near future! It is a blend of right people with the right technological solutions which consults 24 x 7 to form strategies to navigate your company operations at the right time.</p>
+			</div>
+			<div class="order-5 h-96 lg:h-auto bg-[url('/src/images/company_culture.jpg')] bg-contain bg-no-repeat bg-center shadow-lg border-[1px] border-[#0001] rounded-lg">
+			</div>
+			<div class="order-6 bg-[#f9f9f9] px-5 py-12 md:px-12 md:py-16 flex flex-col justify-center space-y-2 shadow-lg rounded-lg">
+				<h3 class="font-thin text-2xl text-[#222a]">Company Culture</h3>
+				<h5 class="text-2xl md:text-3xl font-semibold">Work hard, play harder!</h5>
+				<p class="text-lg text-[#666]">Work hard, play harder!
+					Sigma believes that people are our assets. Our culture is the foundation of our company. We have the right blend of fresh and expert engineers who can think innovative under experts’ guidance. We provide a stress-free environment to showcase creativity in every engagement we take.</p>
+			</div>
+		</div>
+	</div>
+</Layout>

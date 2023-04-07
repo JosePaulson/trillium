@@ -1,0 +1,65 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/src/images/logo (1).png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="">
+		<Header />
+		<div id="closeMenu" class="hidden z-50 fixed inset-0 bg-[#000] flex flex-col justify-between items-end">
+			<span id="close" class="justify-self-start
+			 pt-4 pr-3 md:pt-7 md:pr-6"><svg class="w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fffc"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></span>
+			<div class="text-[#f2f2f2] text-end pr-12 pb-12">
+				<ul class="font-bold text-3xl md:text-4xl lg:text-5xl space-y-8 md:space-y-12">
+					<a class="block hover:text-gray-400 focus:text-gray-400" href="/">
+						<li>HOME</li>
+					</a>
+					<a class="block hover:text-gray-400 focus:text-gray-400" href="/industries">
+						<li>INDUSTRIES</li>
+					</a>
+					<a class="block hover:text-gray-400 focus:text-gray-400" href="/solutions">
+						<li>SOLUTIONS</li>
+					</a>
+					<a class="block hover:text-gray-400 focus:text-gray-400" href="/partners">
+						<li>PARTNERS</li>
+					</a>
+					<a class="block hover:text-gray-400 focus:text-gray-400" href="awards">
+						<li>AWARDS</li>
+					</a>
+					<a class="block hover:text-gray-400 focus:text-gray-400" href="contact">
+						<li>CONTACT US</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<style>
+	a {
+		-webkit-tap-highlight-color: transparent;
+	}
+</style>
+
+<script>
+	document.getElementById('toggler').addEventListener('click', (e=>{
+		document.getElementById('closeMenu').classList.remove('hidden')
+		// document.querySelector('body').style.overflow = 'hidden'
+	}))
+	document.getElementById('close').addEventListener('click', (e=>{
+		document.getElementById('closeMenu').classList.add('hidden')
+		// document.querySelector('body').style.overflow = 'visible'
+	}))
+</script>
